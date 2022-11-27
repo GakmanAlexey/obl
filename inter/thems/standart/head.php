@@ -1,3 +1,7 @@
+<?php
+$m =new \Mod\UserNR\User;
+$id_user = $m->cheack();
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
