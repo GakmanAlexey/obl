@@ -11,13 +11,14 @@ $el3 = $data[2];
     <h1 class="h1_index container">
     Обложки для профиля вк
     </h1>
-    <p class="p_index container">Однозначно, активно развивающиеся страны третьего мира представляют собой не что иное,
-         как квинтэссенцию победы маркетинга над разумом и должны быть ассоциативно распределены по отраслям.
-         Равным образом, постоянное информационно-пропагандистское обеспечение нашей деятельности предопределяет высокую востребованность
-          существующих финансовых и административных условий.
-          Вот вам яркий пример современных тенденций — начало повседневной работы по формированию позиции является качественно новой 
-          ступенью новых предложений.
-    </p>
+    <p class="p_index container">Наш проект занимается разработкой тематических обложек для профиля вк, с первых дней обновления. Мы первые и самое крупное сообщество художников. Наша цель сделать вашу страничку максимально привлекательной. А наши обложки должны сочетаться с вашим профилем и подчеркивать вашу уникальность и характер..</p>
+    <h3  class="h3_index container">Характеристики наших работ</h3>
+    <p class="p_index container">Наши фоны для страниц вк, соответствую всем требованиям социальной сети, включая форматы: png и размер 1920px на 640px. Они не содержат рекламу и прочих атрибутов данной сферы в том числе нет вотермарка. Так же стандарты наших творений всегда на высоте..</p>
+    <h3  class="h3_index container">Тематики.</h3>
+    <p class="p_index container">Основные тематики работ это Аниме, Игры, Фильмы и прочие направления искусств которые характеризуют вашу уникальность и изящность!  Вы можете ознакомиться с нашими работами в разделе «галерея обложек» и скачать понравившуюся вам..</p>
+    <p class="p_index container">Наш девиз – Все лучше нашим пользователям.</p>
+
+ 
 
     <div class="section">
         <h3 class="section_title container">Новые обложки</h3>
@@ -53,25 +54,29 @@ $el3 = $data[2];
         </div>
         <form class="form_box" name="test" method="post" action="input1.php">
             <div class="form_box_left">
-                <select class="form_box_select" атрибуты>
-                    <option атрибуты>Пункт 1</option>
-                    <option атрибуты>Пункт 2</option> 
-                    <option атрибуты>Пункт 3</option> 
-                    <option атрибуты>Пункт 4</option> 
-                    <option атрибуты>Пункт 5</option> 
-                    <option атрибуты>Пункт 6</option> 
-                    <option атрибуты>Пункт 7</option> 
-                    <option атрибуты>Пункт 8</option> 
-                    <option атрибуты>Пункт 9</option> 
-                    <option атрибуты>Пункт 10</option> 
+                <select class="form_box_select" name="type_obl">
+                    <option name="anime">Аниме</option>
+                    <option name="igry">Игры</option> 
+                    <option name="filmy">Фильмы</option> 
+                    <option name="priroda">Природа</option> 
+                    <option name="jivotnie">Животные</option> 
+                    <option name="goroda">Города</option> 
+                    <option name="geometriya">Геометрия</option> 
+                    <option name="lampy">Лампы</option> 
+                    <option name="moda">Мода</option> 
+                    <option name="patriotizm">Патриотизм</option> 
+                    <option name="avto">Авто\мото</option> 
+                    <option name="iskustvo">Искуство</option> 
+                    <option name="it">ИТ</option> 
+                    <option name="paznoe">Разное</option> 
                 </select>
 
                 <p>Тема:<br>
-                    <input class="form_box_theme" type="text" size="40" placeholder="Атака титанов">
+                    <input class="form_box_theme" type="text" size="40" placeholder="Атака титанов" name="tema_obl">
                 </p>
 
                 <p>Описание:<br>
-                    <textarea class="form_box_description" name="comment" cols="40" rows="3"></textarea>
+                    <textarea class="form_box_description" name="comment" cols="40" rows="3" name="desc_obl"></textarea>
                 </p>
             </div>
 
@@ -79,12 +84,12 @@ $el3 = $data[2];
                 <p class="form_box_right_title">Уведомить о готовности</p>
 
                 <p>Email:<br> 
-                    <input class="form_box_email" type="email" name="login">
+                    <input class="form_box_email" type="email" name="email">
                 </p>
 
                 <input class="form_box_checkbox" type="checkbox" id="politics" onclick="check();" value="" autocomplete="off"/>
                 Нажимая на кнопку "Отправить заказ", я даю 
-                <a href="ссылка на страницу согласия">
+                <a href="/litsenziya/">
                     согласие на обработку персональных данных.
                 </a>
                 <br><br>
