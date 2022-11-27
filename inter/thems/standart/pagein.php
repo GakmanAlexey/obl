@@ -22,7 +22,7 @@ $ball = $data[0]["pluses"] / ($data[0]["pluses"] + $data[0]["minuses"])*10;
         <h3 class="section_title cover_box_title container"><?php  echo $name; ?></h3>
         <div class="section_cover_box">
             <div class="section_cover"> 
-                <img class="section_cover_image" src="\src\img\oblog\<?php  echo $url_img; ?>" alt="Обложка для вк - <?php  echo $name; ?>">
+                <img class="section_cover_image" src="\src\img\lower\<?php  echo $url_img; ?>" alt="Обложка для вк - <?php  echo $name; ?>">
             </div>
         </div>
     </div>
@@ -56,9 +56,9 @@ $ball = $data[0]["pluses"] / ($data[0]["pluses"] + $data[0]["minuses"])*10;
     <div class="mokap container">
         <h3 class="mokap_title">Как будет выглядить</h3>
 <div class="mokap_container">
-    <div class="mokap_desktop"><img class="mokap_desktop_image" src="/src/img/desk.png" alt=""> <img class="mokap_desktop_obl_image" src="/src/img/deskobl.png" alt=""></div>
+    <div class="mokap_desktop"><img class="mokap_desktop_image" src="/src/img/desk.png" alt=""> <img class="mokap_desktop_obl_image" src="\src\img\prew\<?php  echo $url_img; ?>" alt=""></div>
     <br>
-    <div class="mokap_mobile"><img class="mokap_mobile_image"src="/src/img/mobile.png" alt=""> <img class="mokap_mobile_obl_image" src="/src/img/phoneobl.png" alt=""></div>
+    <div class="mokap_mobile"><img class="mokap_mobile_image"src="/src/img/mobile.png" alt=""> <img class="mokap_mobile_obl_image" src="\src\img\mob\<?php  echo $url_img; ?>" alt=""></div>
     
 </div>
     </div>

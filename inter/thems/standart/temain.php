@@ -19,7 +19,7 @@
         <h3 class="section_title cover_box_title container"><?php  echo $name; ?></h3>
         <div class="section_cover_box">
             <div class="section_cover"> 
-                <img class="section_cover_image" src="\src\img\oblog\<?php  echo $url_img; ?>" alt="Обложка для вк - <?php  echo $name; ?>">
+                <img class="section_cover_image" src="\src\img\lower\<?php  echo $url_img; ?>" alt="Обложка для вк - <?php  echo $name; ?>">
             </div>
             <a class="section_cover_open " href="<?php  echo $url; ?>">
                 <img class="section_cover_open_image" src="/src/img/eye.png" alt="">

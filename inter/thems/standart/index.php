@@ -1,3 +1,12 @@
+<?php
+$el1 = $data[0];
+$el2 = $data[1];
+$el3 = $data[2];
+
+
+
+?>
+
 <div class="banner_index"><br></div>
     <h1 class="h1_index container">
     Обложки для профиля вк
@@ -12,12 +21,12 @@
 
     <div class="section">
         <h3 class="section_title container">Новые обложки</h3>
-        <p class="section_trek container">Аниме - Гурен лаган - №1</p>
+        <p class="section_trek container"><?php echo $el2["name_i"];?></p>
         <div class="section_cover_box">
             <div class="section_cover"> 
-                <img class="section_cover_image" src="/src/img/1.png" alt="">
+                <img class="section_cover_image" src="\src\img\lower\<?php echo $el2["img"];?>" alt="">
             </div>
-            <a class="section_cover_open " href="#">
+            <a class="section_cover_open " href="<?php echo $data[4];?>">
                 <img class="section_cover_open_image" src="/src/img/eye.png" alt="">
                 <p class="section_cover_open_p">открыть</p>
             </a>
@@ -26,12 +35,12 @@
 <br>
     <div class="section">
         <h3 class="section_title container">Популярные обложки</h3>
-        <p class="section_trek container">Аниме - Гурен лаган - №1</p>
+        <p class="section_trek container"><?php echo $el1["name_i"];?></p>
         <div class="section_cover_box">
             <div class="section_cover"> 
-                <img class="section_cover_image" src="/src/img/1.png" alt="">
+                <img class="section_cover_image" src="\src\img\lower\<?php echo $el1["img"];?>" alt="">
             </div>
-            <a class="section_cover_open " href="#">
+            <a class="section_cover_open " href="<?php echo $data[3];?>">
                 <img class="section_cover_open_image" src="/src/img/eye.png" alt="">
                 <p class="section_cover_open_p">открыть</p>
             </a>
@@ -86,12 +95,12 @@
     
     <div class="section">
         <h3 class="section_title container">Случайная обложка</h3>
-        <p class="section_trek container">Аниме - Гурен лаган - №1</p>
+        <p class="section_trek container"><?php echo $el3["name_i"];?></p>
         <div class="section_cover_box">
             <div class="section_cover"> 
-                <img class="section_cover_image" src="/src/img/1.png" alt="">
+                <img class="section_cover_image" src="\src\img\lower\<?php echo $el3["img"];?>" alt="">
             </div>
-            <a class="section_cover_open " href="#">
+            <a class="section_cover_open " href="<?php echo $data[5];?>">
                 <img class="section_cover_open_image" src="/src/img/eye.png" alt="">
                 <p class="section_cover_open_p">открыть</p>
             </a>
