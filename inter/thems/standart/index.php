@@ -52,7 +52,7 @@ $el3 = $data[2];
         <div class="form_title">
             <h3>Заказать обложку</h3>
         </div>
-        <form class="form_box" name="test" method="post" action="input1.php">
+        <form class="form_box" name="test" method="post" action="/zakaz/">
             <div class="form_box_left">
                 <select class="form_box_select" name="type_obl">
                     <option name="anime">Аниме</option>
@@ -118,25 +118,25 @@ $el3 = $data[2];
             <div class="comment_box">
                 <div class="comment_box_avtor">
                     <div class="comment_box_avatar"></div>
-                    <div class="comment_box_name">Super Penis</div>
+                    <div class="comment_box_name">Имя Фамилия</div>
                 </div>
-                <div class="comment_box_text"><p>Однозначно, ключевые особенности структуры проекта могут быть представлены в исключительно положительном свете.</p></div>
+                <div class="comment_box_text"><p>Отзывов еще нет :(</p></div>
             </div>
 
             <div class="comment_box">
                 <div class="comment_box_avtor">
                     <div class="comment_box_avatar"></div>
-                    <div class="comment_box_name">Super Penis</div>
+                    <div class="comment_box_name">Имя Фамилия</div>
                 </div>
-                <div class="comment_box_text"><p>Однозначно, ключевые особенности структуры проекта могут быть представлены в исключительно положительном свете.</p></div>
+                <div class="comment_box_text"><p>Отзывов еще нет :(</p></div>
             </div>
 
             <div class="comment_box">
                 <div class="comment_box_avtor">
                     <div class="comment_box_avatar"></div>
-                    <div class="comment_box_name">Super Penis</div>
+                    <div class="comment_box_name">Имя Фамилия</div>
                 </div>
-                <div class="comment_box_text"><p>Однозначно, ключевые особенности структуры проекта могут быть представлены в исключительно положительном свете.</p></div>
+                <div class="comment_box_text"><p>Отзывов еще нет :(</p></div>
             </div>
         </div>
     </div>

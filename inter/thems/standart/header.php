@@ -11,7 +11,7 @@
             <div class="nav_search">
                 <div class="d1">
                     <form class="form_search">
-                        <input type="text" placeholder="Искать здесь...">
+                        <input type="text" placeholder="Поиск пока не работает(((">
                         <button type="submit" name="search">Н</button>
                     </form>
                 </div>
