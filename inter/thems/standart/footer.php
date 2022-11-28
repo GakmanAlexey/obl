@@ -4,11 +4,9 @@
                 <div class="footer_logo"><img class="footer_img" src="/src/img/logo.png" alt=""></div>
                 <div class="footer_nav">
                     <ul>
-                        <li class="li_footer"><a class="link_footer" href="">Главная</a></li>
-                        <li class="li_footer"><a class="link_footer" href="">Обложки</a></li>
-                        <li class="li_footer"><a class="link_footer" href="">Магазин</a></li>
-                        <li class="li_footer"><a class="link_footer" href="">Другое</a></li>
-                        <li class="li_footer"><a class="link_footer" href="">Купить</a></li>
+                        <li class="li_footer"><a class="link_footer" href="/">Главная</a></li>
+                        <li class="li_footer"><a class="link_footer" href="/galereya-oblozhek/">Галерея обложек</a></li>
+                        <li class="li_footer"><a class="link_footer" href="">Статьи</a></li>
                     </ul>
                     <ul>
                         <li class="li_footer"><a class="link_footer" href="">Заказать</a></li>
