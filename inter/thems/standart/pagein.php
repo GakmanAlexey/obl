@@ -1,24 +1,26 @@
 <script type="text/javascript">
 function like() {
     $.ajax({
-        url: '/ajax/vote/',         /* Куда отправить запрос */
-        method: 'post',             /* Метод запроса (post или get) */
-        dataType: 'html',          /* Тип данных в ответе (xml, json, script, html). */
-        data: {text: 'like',urli:'<?php  echo $url_img = $data[0]['myAddres'] ?>'},     /* Данные передаваемые в массиве */
-        success: function(data){   /* функция которая будет выполнена после успешного запроса.  */
+        url: '/ajax/vote/',         
+        method: 'post',             
+        dataType: 'html',         
+        data: {text: 'like',urli:'<?php  echo $url_img = $data[0]['myAddres'] ?>'},    
+        success: function(data){   
         }
     });
+    window.location.reload();
 
 }
 function dislike() {
     $.ajax({
-        url: '/ajax/vote/',         /* Куда отправить запрос */
-        method: 'post',             /* Метод запроса (post или get) */
-        dataType: 'html',          /* Тип данных в ответе (xml, json, script, html). */
-        data: {text: 'dislike',urli:'<?php  echo $url_img = $data[0]['myAddres'] ?>'},     /* Данные передаваемые в массиве */
-        success: function(data){   /* функция которая будет выполнена после успешного запроса.  */
+        url: '/ajax/vote/',         
+        method: 'post',             
+        dataType: 'html',         
+        data: {text: 'dislike',urli:'<?php  echo $url_img = $data[0]['myAddres'] ?>'},     
+        success: function(data){   
         }
     });
+    window.location.reload();
 }
 
 </script>

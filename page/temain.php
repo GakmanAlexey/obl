@@ -19,6 +19,9 @@ Class temain{
         $data[]=$children_data;        
         $data[]=$name_dir;       
         $data[]=$fat;
+        $urlist = $name_dir;
+            $seo = new \Mod\Seo\seo;
+            $data["seo"] = $seo->main($urlist);
         $page = ["head","header","temain","footer"];
         $vi = new \Mod\View\View();
         $vi->show($page,$data);

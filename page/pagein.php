@@ -11,6 +11,9 @@ Class pagein{
 
         //echo $date_dir['id'];
         $data[]=$date_dir;
+        $urlist = $name_dir;
+        $seo = new \Mod\Seo\seo;
+        $data["seo"] = $seo->main($urlist);
         $page = ["head","header","pagein","footer"];
         $vi = new \Mod\View\View();
         $vi->show($page,$data);

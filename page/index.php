@@ -65,6 +65,11 @@ Class index{
             $data[] = $url2;
             $data[] = $url3;
         //var_dump($result_sql3);
+        
+        $urlist = "/";
+        $seo = new \Mod\Seo\seo;
+        $data["seo"] = $seo->main($urlist);
+
         $page = ["head","header","index","footer"];
         $vi = new \Mod\View\View();
         $vi->show($page,$data);

@@ -25,7 +25,10 @@ Class Sluchainaya{
             $fat3 = $result_sql12["fathers"];
             $url3 =  "/galereya-oblozhek/".$result_sql12["myAddres"]."/".$result_sql11["myAddres"]."/".$result_sql3["myAddres"]."/";
 
-        
+            $urlist = "/sluchaynaya-oblozhka/";
+            $seo = new \Mod\Seo\seo;
+            $data["seo"] = $seo->main($urlist);
+
         $page = ["head","header","sluchainaya","footer"];
         $vi = new \Mod\View\View();
         $vi->show($page,$data);
