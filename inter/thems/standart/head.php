@@ -16,4 +16,6 @@ $id_user = $m->cheack();
     <title>Document</title>
     <meta name="description" content="jgbcfybt ntrvcnf">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </head>

@@ -1,4 +1,27 @@
+<script type="text/javascript">
+function like() {
+    $.ajax({
+        url: '/ajax/vote/',         /* Куда отправить запрос */
+        method: 'post',             /* Метод запроса (post или get) */
+        dataType: 'html',          /* Тип данных в ответе (xml, json, script, html). */
+        data: {text: 'like',urli:'<?php  echo $url_img = $data[0]['myAddres'] ?>'},     /* Данные передаваемые в массиве */
+        success: function(data){   /* функция которая будет выполнена после успешного запроса.  */
+        }
+    });
 
+}
+function dislike() {
+    $.ajax({
+        url: '/ajax/vote/',         /* Куда отправить запрос */
+        method: 'post',             /* Метод запроса (post или get) */
+        dataType: 'html',          /* Тип данных в ответе (xml, json, script, html). */
+        data: {text: 'dislike',urli:'<?php  echo $url_img = $data[0]['myAddres'] ?>'},     /* Данные передаваемые в массиве */
+        success: function(data){   /* функция которая будет выполнена после успешного запроса.  */
+        }
+    });
+}
+
+</script>
     <?php
 
 //var_dump($data);
@@ -29,9 +52,9 @@ $ball = $data[0]["pluses"] / ($data[0]["pluses"] + $data[0]["minuses"])*10;
     <div class="container panel">
         <div class="cover_section_item_statistics ">
             <div class="cover_section_item_statistics_top">
-                <a href=""><img class="cover_section_item_statistics_top_like" src="/src/img/like.png" alt=""></a>
+                <img class="cover_section_item_statistics_top_like" src="/src/img/like.png" alt="" onclick="like();">
                 <div class="cover_section_item_statistics_top_number"><?php  echo round($ball,1); ?></div>
-                <a href=""> <img class="cover_section_item_statistics_top_dislike" src="/src/img/dislike.png" alt=""> </a>
+                <img class="cover_section_item_statistics_top_dislike" src="/src/img/dislike.png" alt="" onclick="dislike();"> 
             </div>
             <div class="cover_section_item_statistics_line">
                     <div class="progress-bar" role="progressbar" style="width: <?php  echo $ball*10; ?>%"

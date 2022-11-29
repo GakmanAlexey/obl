@@ -6,12 +6,10 @@
                     <ul>
                         <li class="li_footer"><a class="link_footer" href="/">Главная</a></li>
                         <li class="li_footer"><a class="link_footer" href="/galereya-oblozhek/">Галерея обложек</a></li>
-                        <li class="li_footer"><a class="link_footer" href="">Статьи</a></li>
+                        <li class="li_footer"><a class="link_footer" href="/sluchaynaya-oblozhka/">Случайная обложка</a></li>
                     </ul>
                     <ul>
-                        <li class="li_footer"><a class="link_footer" href="">Заказать</a></li>
-                        <li class="li_footer"><a class="link_footer" href="">Статьи</a></li>
-                        <li class="li_footer"><a class="link_footer" href="">Разное</a></li>
+                        <li class="li_footer"><a class="link_footer" href="/litsenziya/">Лицензионное соглашение</a></li>
                     </ul>
                     <ul>
                         <li class="li_footer"><a class="link_footer" href="">Товар</a></li>
