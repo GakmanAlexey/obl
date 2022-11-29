@@ -75,7 +75,8 @@ Class Router{
         $result->$funct();
     }
     public function e404(){
-        echo "error 404: page don't faunt!!!";
+        $p = new \Page\error404;
+        $p->main();
         die();
     }
 }
