@@ -7,7 +7,8 @@
     
     
     <h1 class="h1_index container"><?php  echo $data[0]; ?></h1>
-    <p class="p_index container"><?php  echo $data[1]; ?></p>
+    <p class="p_index container"></p>
+    <?php  echo $data[1]; ?>
     <?php
     foreach($data[2] as $dt){
         //var_dump($dt);
@@ -32,3 +33,11 @@
     <?php
     }
     ?>
+
+<?php
+/*
+<p class="p_index container">В данном разделе собрано более 500 аниме обложек вк. Они представляют собой совершенно разные тайтлы, но главное их объединяет подходящий размер и качество 1920 на 640 пикселей и формат изображения пнг.
+
+<h3 class="h3_index container">Популярные тайтлы</h3>
+*/
+?>

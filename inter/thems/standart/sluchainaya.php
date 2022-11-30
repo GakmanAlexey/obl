@@ -8,7 +8,32 @@
             $ball = 0;
         }
     ?>
-    
+    <script type="text/javascript">
+function like() {
+    $.ajax({
+        url: '/ajax/vote/',         
+        method: 'post',             
+        dataType: 'html',         
+        data: {text: 'like',urli:'<?php  echo $url_img = $data[0]['myAddres'] ?>'},    
+        success: function(data){   
+        }
+    });
+    window.location.reload();
+
+}
+function dislike() {
+    $.ajax({
+        url: '/ajax/vote/',         
+        method: 'post',             
+        dataType: 'html',         
+        data: {text: 'dislike',urli:'<?php  echo $url_img = $data[0]['myAddres'] ?>'},     
+        success: function(data){   
+        }
+    });
+    window.location.reload();
+}
+
+</script>
    
     
 
@@ -23,9 +48,9 @@
     <div class="container panel">
         <div class="cover_section_item_statistics ">
             <div class="cover_section_item_statistics_top">
-                <a href=""><img class="cover_section_item_statistics_top_like" src="/src/img/like.png" alt=""></a>
+                <img class="cover_section_item_statistics_top_like" src="/src/img/like.png" alt=""  onclick="like();">
                 <div class="cover_section_item_statistics_top_number"><?php  echo round($ball,1); ?></div>
-                <a href=""> <img class="cover_section_item_statistics_top_dislike" src="/src/img/dislike.png" alt=""> </a>
+                <img class="cover_section_item_statistics_top_dislike" src="/src/img/dislike.png" alt=""  onclick="dislike();"> 
             </div>
             <div class="cover_section_item_statistics_line">
                     <div class="progress-bar" role="progressbar" style="width: <?php  echo $ball*10; ?>%"
