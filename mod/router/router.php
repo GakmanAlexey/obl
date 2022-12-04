@@ -50,11 +50,7 @@ Class Router{
         
         
         $pieces = explode("/", $this->way);
-        if($pieces[1] == "katalog"){
-            $ld = new \Page\Katalog();
-            $ld->index($pieces);
-            return;
-        }
+
         //Запрос        
         $sql = new \Mod\Sql\Sql;
         $connect = $sql->db_connect;
