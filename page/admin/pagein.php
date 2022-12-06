@@ -6,7 +6,7 @@ Class pagein{
     public function main(){
         
 
-        $page = ["admin\head","admin\header","admin\pagein","admin\footer"];
+        $page = ["admin\head","admin\header","admin\lmenu","admin\pagein","admin\footer"];
         $vi = new \Mod\View\View();
         $vi->show($page,$data);
     }

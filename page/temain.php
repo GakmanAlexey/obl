@@ -11,7 +11,7 @@ Class temain{
         $date_dir = $this->take_date_dir($name_dir);
         //var_dump( $date_dir);
         $h1 = $date_dir["name_i"];
-        $text = $date_dir["descript"];
+        $text = $date_dir["text_main"];
         $children_data = $this->take_date_cil($date_dir['id']);
         //echo $date_dir['id'];
         $data[]=$h1;
