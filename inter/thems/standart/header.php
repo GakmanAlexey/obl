@@ -5,7 +5,7 @@
             <div class="nav_link">
                 <ul class="nav_link_ul">
                     <li class="nav_link_li"><a href="/galereya-oblozhek/">Галерея обложек</a></li>
-                    <li class="nav_link_li">Статьи</li>
+                    <li class="nav_link_li">Закачать</li>
                 </ul>
             </div>
             <div class="nav_search">
