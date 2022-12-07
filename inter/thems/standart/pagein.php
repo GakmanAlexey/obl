@@ -41,6 +41,13 @@ $ball = $data[0]["pluses"] / ($data[0]["pluses"] + $data[0]["minuses"])*10;
 }
 ?>
     
+    <ul class="breadcrumb container">
+        <li><a href="#">Раздел 1</a></li>
+        <li><a href="#">Раздел 2</a></li>
+        <li><a href="#">Раздел 3</a></li> 
+        <li><a href="#">Раздел 4</a></li> 
+        <li class="active"><a href="">Открытый раздел</a></li>
+      </ul>
     
 
     <div class="section">
