@@ -5,7 +5,21 @@
 
 ?>
     
-    
+    <ul class="breadcrumb container"  itemscope itemtype="https://schema.org/BreadcrumbList">
+        <?php 
+            $x = 0;
+            while($x <  $data["bread"]["long"]){
+        ?>
+        <li  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="<?php echo $data["bread"]["url"][$x]; ?>"><span itemprop="name"><?php echo $data["bread"]["name"][$x]; ?></span></a>
+            <meta itemprop="position" content="<?php echo $x+1;?>" />
+        </li>
+        <?php
+            $x++;
+            };
+        ?>
+
+      </ul>
     <h1 class="h1_index container"><?php  echo $data[0]; ?></h1>
     <p class="p_index container"><?php  echo $data[1]; ?></p>
     <?php

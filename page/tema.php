@@ -19,6 +19,8 @@ Class tema{
         $urlist = $name_dir;
             $seo = new \Mod\Seo\seo;
             $data["seo"] = $seo->main($urlist);
+            $bred = new \Mod\Bread\index;        
+            $data["bread"] = $bred->main();
         $page = ["head","header","tema","footer"];
         $vi = new \Mod\View\View();
         $vi->show($page,$data);

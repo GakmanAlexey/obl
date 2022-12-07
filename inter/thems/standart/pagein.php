@@ -41,21 +41,38 @@ $ball = $data[0]["pluses"] / ($data[0]["pluses"] + $data[0]["minuses"])*10;
 }
 ?>
     
-    <ul class="breadcrumb container">
-        <li><a href="#">Раздел 1</a></li>
-        <li><a href="#">Раздел 2</a></li>
-        <li><a href="#">Раздел 3</a></li> 
-        <li><a href="#">Раздел 4</a></li> 
-        <li class="active"><a href="">Открытый раздел</a></li>
+    <ul class="breadcrumb container"  itemscope itemtype="https://schema.org/BreadcrumbList">
+        <?php 
+            $x = 0;
+            while($x <  $data["bread"]["long"]){
+        ?>
+        <li  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="<?php echo $data["bread"]["url"][$x]; ?>"><span itemprop="name"><?php echo $data["bread"]["name"][$x]; ?></span></a>
+            <meta itemprop="position" content="<?php echo $x+1;?>" />
+        </li>
+        <?php
+            $x++;
+            };
+            $lefts = $data["bread"]["url"][2].$data["left"]."/";
+            $rights = $data["bread"]["url"][2].$data["right"]."/";
+        ?>
+
       </ul>
     
 
-    <div class="section">
-        <h3 class="section_title cover_box_title container"><?php  echo $name; ?></h3>
+    <div class="section" itemscope itemtype="http://schema.org/ImageObject">
+        <h3 itemprop="name" class="section_title cover_box_title container"><?php  echo $name; ?></h3>
         <div class="section_cover_box">
-            <div class="section_cover"> 
-                <img class="section_cover_image" src="\src\img\lower\<?php  echo $url_img; ?>" alt="Обложка для вк - <?php  echo $name; ?>">
+            <div class="section_cover">
+                <img class="section_cover_image" src="\src\img\lower\<?php  echo $url_img; ?>" alt="Обложка для вк - <?php  echo $name; ?>"  itemprop="contentUrl" />
+                <div class="section_cover_aron_box container">
+                    <a href="<?php echo $lefts;?>"><img class="aron_left" src="/src/img/leftaron.png" alt=""> </a>
+                    <a href="<?php echo $rights;?>"><img class="aron_right" src="/src/img/rightaron.png" alt="">  </a>
+                </div>
             </div>
+        </div>
+        <div class="container">
+            <span itemprop="description" >Обложка для вк "<?php  echo $name; ?>"</span>
         </div>
     </div>
     <div class="container panel">

@@ -22,11 +22,14 @@ Class temain{
         $urlist = $name_dir;
             $seo = new \Mod\Seo\seo;
             $data["seo"] = $seo->main($urlist);
+
+            $bred = new \Mod\Bread\index;        
+            $data["bread"] = $bred->main();
         $page = ["head","header","temain","footer"];
         $vi = new \Mod\View\View();
         $vi->show($page,$data);
     }
-
+    
     public function take_name_dir(){
         $url = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
         $url1 = explode("/", $url);

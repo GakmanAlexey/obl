@@ -30,6 +30,12 @@ $id_user = $m->cheack();
     <title><?php echo $data["seo"]["title"] ;?></title>
     <meta name="description" content="<?php echo $data["seo"]["disc"] ;?>">
     <link rel="icon" href="/favicon.png" type="image/png">
+   <?php
+   $url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+   $url = explode('?', $url);
+   $url = $url[0];
+   ?>
+    <link rel=“canonical” href=“<?php echo $url; ?>” />
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <!-- Yandex.Metrika counter -->
