@@ -14,6 +14,8 @@ Class pagein{
         $urlist = $name_dir;
         $seo = new \Mod\Seo\seo;
         $data["seo"] = $seo->main($urlist);
+        $data["seo"]["title"] = "Скачать Обложку для вк ".$data[0]["name_i"];
+        $data["seo"]["disc"] = "Обложка для вк по  ".$data[0]["name_i"]." Скачать в Высоком качестве. PNG 1920x640 px. Фон для персональной (личной) страницы вк. Обложки по тематике ".$data[0]["name_i"];
 
         
         $bred = new \Mod\Bread\index;        
