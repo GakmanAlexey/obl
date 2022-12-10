@@ -7,7 +7,7 @@
                     <li class="nav_link_li"><a href="/">Главная</a></li>
                     <li class="nav_link_li"><a href="/galereya-oblozhek/">Галерея обложек</a></li>
                     
-                    <li class="nav_link_li"><a href="#"> Статьи</a></li>
+                    <li class="nav_link_li"><a href="/katalog-statey/"> Статьи</a></li>
                     <li class="nav_link_li"><a href="#">Заказать</a></li>
                 </ul>
             </div>

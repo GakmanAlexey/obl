@@ -11,7 +11,7 @@ $id_user = $m->cheack();
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="/src/css/style.css" rel="stylesheet" type="text/css">
+        <link href="/src/css/style1.css" rel="stylesheet" type="text/css">
         <title>Ошибка 404 – страница не найдена</title>
         <meta name="title" content="Ошибка 404 – страница не найдена" />
         <?php
@@ -22,7 +22,7 @@ $id_user = $m->cheack();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/src/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/src/css/style1.css" rel="stylesheet" type="text/css">
 
     <meta name="title" content="<?php echo $data["seo"]["title"] ;?>" />
     <link rel="image_src" href="/src/img/<?php echo $data["seo"]["img"] ;?>" />
