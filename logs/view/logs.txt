@@ -56,3 +56,45 @@
 [07.12.2022 20:16:16] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
 [11.12.2022 07:26:19] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/auth_ok.php
 [11.12.2022 07:26:50] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/auth_ok.php
+[11.12.2022 22:28:12] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:47:02] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:47:23] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:47:33] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:48:15] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:48:27] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:49:14] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:49:47] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:50:28] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:50:35] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:51:32] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:52:00] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:52:07] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:52:27] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:52:28] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:53:00] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:56:45] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:56:46] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:57:06] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:57:22] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:57:32] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:57:42] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:58:07] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:58:17] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:58:26] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 23:58:35] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[12.12.2022 00:00:00] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[12.12.2022 00:00:14] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[12.12.2022 00:01:32] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[12.12.2022 00:01:51] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[12.12.2022 00:27:55] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[12.12.2022 00:29:40] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[12.12.2022 00:30:07] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[12.12.2022 00:30:22] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[12.12.2022 00:30:33] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[12.12.2022 00:41:00] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[12.12.2022 00:47:22] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[12.12.2022 00:47:35] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[12.12.2022 00:48:05] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[12.12.2022 00:48:25] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[12.12.2022 00:48:28] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[12.12.2022 00:50:12] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php

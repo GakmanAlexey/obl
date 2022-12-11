@@ -219,4 +219,30 @@ Class User{
         }
     }
 
+    public function den_adm(){
+        if(!($this->its_admin())){
+            $p = new \Page\error401;
+            $p->main();
+            die();
+        }
+    }
+    public function its_admin(){
+        if(!isset($_SESSION["id"])){
+            return false;
+        }
+        $sql = new \Mod\Sql\Sql;
+        $this->connect = $sql->db_connect;
+        $sth = $this->connect->prepare("SELECT * FROM `user2` WHERE `id` = ?");
+            $sth->execute(array($_SESSION["id"]));
+            $result_sql = $sth->fetch(\PDO::FETCH_ASSOC);
+        if(!isset($result_sql["roll_s"])){
+            return false;
+        }
+        if($result_sql["roll_s"] == "admin"){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 }

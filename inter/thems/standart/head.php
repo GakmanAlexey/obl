@@ -15,6 +15,15 @@ $id_user = $m->cheack();
         <title>Ошибка 404 – страница не найдена</title>
         <meta name="title" content="Ошибка 404 – страница не найдена" />
         <?php
+     }else if(isset($data['401'])){
+      ?>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="/src/css/style1.css" rel="stylesheet" type="text/css">
+      <title>Ошибка 401 – Авторизуйтесь</title>
+      <meta name="title" content="Ошибка 401 – Авторизуйтесь />
+      <?php
      }else{
         
         //var_dump($data["seo"]);
