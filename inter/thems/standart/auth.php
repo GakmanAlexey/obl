@@ -1,3 +1,8 @@
+<?php
+        if(($data["error"] == []) and isset($data["result"]["new"]) and ($data["result"]["new"] == "no")){
+            echo '<div class="container height_reg"><br><br><br>Авторизация прошла успешно!<a href="/"  class="login_form_personal_link"> Главная страница </a></div>';
+        }else{
+?>
 <div class="container height_reg">
     <div class="login">
         <div class="login_panel">
@@ -5,11 +10,11 @@
             <a class="login_panel_login" href="/user/reg/">Регистрация</a>
         </div>
         <form class="login_form" action="/user/auth/" method="post">
-            <label class="login_form_lable" for="login">Логин</label><br>
+            <label class="login_form_lable" for="login">Логин<?php  if(isset($data["error"]["login"])){echo "<span class='error'> ".$data["error"]["login"]."</span>";} ?></label><br>
             <input class="login_form_input" type="text" id="login" placeholder="Введите логин" name="login"  required>
             <br><br>
     
-            <label class="login_form_lable"  for="password">Пароль</label><br>
+            <label class="login_form_lable"  for="password">Пароль<?php  if(isset($data["error"]["pass"])){echo "<span class='error'> ".$data["error"]["pass"]."</span>";} ?></label><br>
             <input class="login_form_input" type="password" id="password" placeholder="Введите пароль"  name="password"  required>
             <br><br>
             <p  class="fix_1">
@@ -27,3 +32,6 @@
         
     </div>
 </div>
+<?php
+        }
+        ?>

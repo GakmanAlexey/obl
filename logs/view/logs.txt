@@ -54,3 +54,5 @@
 [07.12.2022 20:11:05] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
 [07.12.2022 20:11:34] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
 [07.12.2022 20:16:16] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/adminooter.php
+[11.12.2022 07:26:19] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/auth_ok.php
+[11.12.2022 07:26:50] system: Не найдет файл: E:\OSPanel\domains\ob.local/inter/thems/standart/auth_ok.php

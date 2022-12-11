@@ -1,3 +1,8 @@
+<?php
+        if(($data["error"] == []) and isset($data["result"]["new"]) and ($data["result"]["new"] == "no")){
+            echo '<div class="container height_reg"><br><br><br>Регистрация прошла успешно!<a href="/user/auth/"  class="login_form_personal_link"> Авторизуйтесь </a></div>';
+        }else{
+?>
 <div class="container height_reg">
     <div class="login">
         <div class="login_panel">
@@ -40,3 +45,6 @@
         
     </div>
 </div>
+<?php
+        }
+        ?>
