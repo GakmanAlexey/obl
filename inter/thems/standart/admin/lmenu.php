@@ -2,7 +2,7 @@
    <div class="menu"> 
    <div class="element_menu element_menu_bold">
          <div class="element_menu_left_icon"> <img class="icon_parameters_left" src="/src/img/adminico/globe.png"></div>
-         <div class="element_menu_text">Статистика</div>
+         <div class="element_menu_text"><a href="/admin/">Статистика</a></div>
          <div class="element_menu_right_icon"></div>
       </div>
       <div class="element_menu">
@@ -44,7 +44,7 @@
          </div>
          <div class="element_menu">
             <div class="element_menu_left_icon"></div><div class="element_menu_left_icon"></div>
-            <div class="element_menu_text">Добавить</div>
+            <div class="element_menu_text"><a href="/admin/addstatiya/">Добавить</a></div>
             <div class="element_menu_right_icon"> </div>
          </div>
 
