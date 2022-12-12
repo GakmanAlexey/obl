@@ -45,6 +45,10 @@ Class Add{
         //загузить в роутер
         $sth = $connect->prepare("INSERT INTO `router` SET  `url` = ?, `class` = ?, `funct` = ?, `sw` = ?");
         $sth->execute(array("/katalog-statey/".$creater_name."/","Page\stateya","main",0));
+
+        //добавить в sitemap
+        $st = new \Mod\Sitemap\load;
+        $st->add_to("/katalog-statey/".$creater_name."/",time(),"monthly",0.5);
     }
 
     public function add_file($creater_name){

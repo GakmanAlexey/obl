@@ -28,7 +28,7 @@
       </div>
       <div class="element_menu">
          <div class="element_menu_left_icon"></div><div class="element_menu_left_icon"></div>
-         <div class="element_menu_text">Sitemap</div>
+         <div class="element_menu_text"><a href="/admin/sitemap/">Sitemap</a></div>
          <div class="element_menu_right_icon"> </div>
       </div>
 
