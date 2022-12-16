@@ -6,7 +6,7 @@ Class Config{
     public $host = "localhost";
     public $detabase = "RLC";
     public $prefix = "gdh_";
-    public $login = "phpmyadmin";
-    public $pass = "QAsw12#$";    
+    public $login = "root";
+    public $pass = "";    
     public $port = "3306";
 }
