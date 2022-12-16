@@ -94,7 +94,7 @@ $ball = $data[0]["pluses"] / ($data[0]["pluses"] + $data[0]["minuses"])*10;
         </div>
         <div class="share"></div>
             <a href="\src\img\oblog\<?php  echo $url_img; ?>" class="download">
-                <div class="download_button" >Скачать <img class="download_button_image" src="/src/img/download.png" alt=""></div>
+                <div class="download_button" onclick="ym(91306735,'reachGoal','TE'); return true;">Скачать <img class="download_button_image" src="/src/img/download.png" alt=""></div>
             </a>
         </div>
     </div>
