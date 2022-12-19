@@ -81,7 +81,7 @@
          </div>
          <div class="element_menu">
             <div class="element_menu_left_icon"></div><div class="element_menu_left_icon"></div>
-            <div class="element_menu_text">Добавить обложку</div>
+            <div class="element_menu_text"><a href="/admin/addoblstep/step1/">Добавить обложку</a></div>
             <div class="element_menu_right_icon"> </div>
          </div>   
 
