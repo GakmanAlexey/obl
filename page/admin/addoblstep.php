@@ -96,4 +96,15 @@ Class addoblstep{
         $vi = new \Mod\View\View();
         $vi->show($page,$data);
     }
+    public function step4(){
+        $data=[];
+        $den = new \Mod\User2\User;
+        $den->den_adm();
+        $add1 = new \Mod\Adminstatii\Addobl;
+        $res = $add1->main();
+        
+        $page = ["admin/head","admin/header","admin/lmenu","admin/addoblstep4","admin/footer"];
+        $vi = new \Mod\View\View();
+        $vi->show($page,$data);
+    }
 }

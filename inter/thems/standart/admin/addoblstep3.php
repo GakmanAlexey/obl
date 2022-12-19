@@ -10,13 +10,13 @@
             <?php
             //var_dump("<pre>",$data,"</pre>");
             ?>
-            <form  enctype="multipart/form-data"  action="/admin/addoblstep/step3/" method="post">
+            <form  enctype="multipart/form-data"  action="/admin/addoblstep/step4/" method="post">
                <h4>Категория</h4>               
-               <input type="text" class="input_standart input_2inline" value="<?php echo $data["fat3"]["name_i"];?>">
-               <input type="text" class="input_standart input_2inline" value="<?php echo $data["fat3"]["myAddres"];?>"><br>
+               <input type="text" class="input_standart input_2inline" value="<?php echo $data["fat3"]["name_i"];?>" name="x1">
+               <input type="text" class="input_standart input_2inline" value="<?php echo $data["fat3"]["myAddres"];?>" name="x2"><br>
                <h4>Родитель</h4>               
-               <input type="text" class="input_standart input_2inline" value="<?php echo $data["fat2"]["name_i"];?>">
-               <input type="text" class="input_standart input_2inline" value="<?php echo $data["fat2"]["myAddres"];?>"><br>
+               <input type="text" class="input_standart input_2inline" value="<?php echo $data["fat2"]["name_i"];?>" name="x3">
+               <input type="text" class="input_standart input_2inline" value="<?php echo $data["fat2"]["myAddres"];?>" name="x4"><br>
                <br><br><br>
                <h4>О файле</h4>  
                <h3>Адрес</h3>    
@@ -25,31 +25,32 @@
                $url_name = $data["fat2"]["myAddres"]."-".$ids_it;
 
                ?>
-               <input type="text" class="input_standart input_4inline" value="galereya-oblozhek">
-               <input type="text" class="input_standart input_4inline" value="<?php echo $data["fat3"]["myAddres"];?>">
-               <input type="text" class="input_standart input_4inline" value="<?php echo $data["fat2"]["myAddres"];?>">
-               <input type="text" class="input_standart input_4inline" value="<?php echo $url_name;?>"><br>
+               <input type="text" class="input_standart input_4inline" value="galereya-oblozhek"  name="x5">
+               <input type="text" class="input_standart input_4inline" value="<?php echo $data["fat3"]["myAddres"];?>" name="x6">
+               <input type="text" class="input_standart input_4inline" value="<?php echo $data["fat2"]["myAddres"];?>" name="x7">
+               <input type="text" class="input_standart input_4inline" value="<?php echo $url_name;?>" name="x8"><br>
                <h3>Данные о файле - Таблица: categories_url</h3>  
                <?php
                $categories_u = [];
 
                $categories_u["fathers"] = $data["fat2"]["id"];
                $categories_u["myAddres"] = $url_name;
+               $categories_u["img_i"] = $data["fat3"]["myAddres"]."\\".$data["fat2"]["myAddres"]."\\".$url_name.".png";
                $categories_u["img"] = $data["fat3"]["myAddres"]."\\".$data["fat2"]["myAddres"]."\\".$url_name.".png";
                $categories_u["name_i"] = $data["fat2"]["name_i"]."-".$ids_it;
                $full_url = "galereya-oblozhek"."/".$data["fat3"]["myAddres"]."/".$data["fat2"]["myAddres"]."/".$url_name."/";
                ?>
                <input type="text" class="input_standart input_3inline" value="Родитель [fathers]">
-               <input type="text" class="input_standart input_3inline" value="<?php echo $categories_u["fathers"];?>">
-               <input type="text" class="input_standart input_3inline" value="<?php echo $data["fat2"]["name_i"];?>"><br>
+               <input type="text" class="input_standart input_3inline" value="<?php echo $categories_u["fathers"];?>"  name="x9">
+               <input type="text" class="input_standart input_3inline" value="<?php echo $data["fat2"]["name_i"];?>"  name="x10"><br>
                <input type="text" class="input_standart input_3inline" value="Адрес страницы [myAddres]">
-               <input type="text" class="input_standart input_3inline" value="<?php echo $categories_u["myAddres"];?>">
-               <input type="text" class="input_standart input_3inline" value="<?php echo $full_url;?>"><br>
+               <input type="text" class="input_standart input_3inline" value="<?php echo $categories_u["myAddres"];?>" name="x11">
+               <input type="text" class="input_standart input_3inline" value="<?php echo $full_url;?>" name="x12"><br>
                <input type="text" class="input_standart input_3inline" value="Адрес картинки [img]">
-               <input type="text" class="input_standart input_3inline" value="<?php echo $data["fat2"]["name_i"];?>">
-               <input type="text" class="input_standart input_3inline" value="<?php echo $categories_u["img"] ;?>"><br>
+               <input type="text" class="input_standart input_3inline" value="<?php echo $data["fat2"]["name_i"];?>" name="x13">
+               <input type="text" class="input_standart input_3inline" value="<?php echo $categories_u["img"] ;?>" name="x14"><br>
                <input type="text" class="input_standart input_2inline" value="Название [name_i]">
-               <input type="text" class="input_standart input_2inline" value="<?php echo $categories_u["name_i"] ;?>"><br>
+               <input type="text" class="input_standart input_2inline" value="<?php echo $categories_u["name_i"] ;?>"  name="x15"><br>
                <input class="input_standart input_1inline button_classic bt_war" multiple  type="file" name="file">
                <h3>Данные о файле - Роутер</h3>  
 

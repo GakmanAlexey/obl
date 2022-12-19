@@ -2,18 +2,11 @@
 
 namespace Mod\Adminstatii;
 
-Class Add{
+Class Addobl{
 
     public function main(){
         if(isset($_POST["go"]) && ($_POST["go"] == "yes")){
-            $name =             $_POST["name"];
-            $opis =             $_POST["name"];
-            $opis_s =           $_POST["opis_s"];
-            $text =             $_POST["text"];
-
-            //$file =             $_POST["photo"];
             
-            $url =              $_POST["url"];
 
             if(isset($_POST["autogen_url"])){
                 $autogen_url = true;
@@ -27,31 +20,35 @@ Class Add{
                 $add_sitemap = false;
             }
         }else{
-            return;
+            return false;
         }
-        $f_cr = new \Mod\Abc\ABC;
-        $creater_name = $f_cr->ru_en($name);
+        echo "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
+        var_dump("<pre><br><br><br><br><br><br><br>",$_POST,"</pre>");
         //Загрузка файла
-        $this->add_file($creater_name);
+        $this->add_file();
         //конект к бд 
         
         $sql = new \Mod\Sql\Sql;
         $connect = $sql->db_connect;   
         //Загрузить статью
-        $data =  date("d.m.y");
-        $autor="main";
-        $sth = $connect->prepare("INSERT INTO `statii` SET `s_name` = ?, `s_kr_opis` = ?, `s_kr_opis_S` = ?, `s_text` = ?, `s_date` = ?, `s_autor` = ?, `s_show` = ?, `url_s` = ?, `img_s` = ?");
-        $sth->execute(array($name,$opis,$opis_s,$text,$data,$autor,1,$creater_name,$creater_name.".png"));
+        $text = "";
+        $sth = $connect->prepare("INSERT INTO `categories_url` SET  `fathers` = ?, `myAddres` = ?, `type_1` = ?, `name_i` = ?, `img` = ?, `text_main` = ?");
+        $sth->execute(array($_POST["x9"],$_POST["x8"],"fs",$_POST["x15"],$_POST["x14"],$text));
+        
         //загузить в роутер
-        $sth = $connect->prepare("INSERT INTO `router` SET  `url` = ?, `class` = ?, `funct` = ?, `sw` = ?");
-        $sth->execute(array("/katalog-statey/".$creater_name."/","Page\stateya","main",0));
-
+        $sth1 = $connect->prepare("INSERT INTO `router` SET  `url` = ?, `class` = ?, `funct` = ?, `sw` = ?");
+        $sth1->execute(array("/".$_POST["x12"],"Page\pagein","main",0));
+        
         //добавить в sitemap
         $st = new \Mod\Sitemap\load;
-        $st->add_to("/katalog-statey/".$creater_name."/",time(),"monthly",0.5);
+        $st->add_to("/".$_POST["x12"],time(),"monthly",0.5);
+        
+        return true;
     }
 
-    public function add_file($creater_name){
+    public function add_file(){
+        $adress_file = $_POST["x14"];
+        echo "$adress_file";
        // Название <input type="file">
         $input_name = 'file';
         
@@ -66,7 +63,7 @@ Class Add{
         );
         
         // Директория куда будут загружаться файлы.
-        $path = MYPOS . '/src/img/stat/';
+        $path = MYPOS . '/src/img/oblog/';
         
         
         if (isset($_FILES[$input_name])) {
@@ -91,7 +88,7 @@ Class Add{
         $f_n_e="";
         foreach ($files as $file) {
             $i++;
-            $f_n_e = $creater_name;
+            $f_n_e = $adress_file;
             $error = $success = '';
     
             // Проверим на ошибки загрузки.
@@ -155,7 +152,7 @@ Class Add{
                     $name = $parts['filename'] . $prefix . '.' . $parts['extension'];
     
                     // Перемещаем файл в директорию.
-                    if (move_uploaded_file($file['tmp_name'], $path . $f_n_e.".png")) {
+                    if (move_uploaded_file($file['tmp_name'], $path . $f_n_e)) {
                         // Далее можно сохранить название файла в БД и т.п.
                         $success = 'Файл «' . $name . '» успешно загружен.';
                     } else {
