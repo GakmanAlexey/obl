@@ -37,7 +37,7 @@
                $categories_u["myAddres"] = $url_name;
                $categories_u["img_i"] = $data["fat3"]["myAddres"]."\\".$data["fat2"]["myAddres"]."\\".$url_name.".png";
                $categories_u["img"] = $data["fat3"]["myAddres"]."\\".$data["fat2"]["myAddres"]."\\".$url_name.".png";
-               $categories_u["name_i"] = $data["fat2"]["name_i"]."-".$ids_it;
+               $categories_u["name_i"] = $data["fat2"]["name_i"]." №".$ids_it;
                $full_url = "galereya-oblozhek"."/".$data["fat3"]["myAddres"]."/".$data["fat2"]["myAddres"]."/".$url_name."/";
                ?>
                <input type="text" class="input_standart input_3inline" value="Родитель [fathers]">

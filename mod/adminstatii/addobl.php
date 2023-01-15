@@ -23,7 +23,7 @@ Class Addobl{
             return false;
         }
         echo "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
-        var_dump("<pre><br><br><br><br><br><br><br>",$_POST,"</pre>");
+        //var_dump("<pre><br><br><br><br><br><br><br>",$_POST,"</pre>");
         //Загрузка файла
         $this->add_file();
         //конект к бд 
@@ -48,7 +48,7 @@ Class Addobl{
 
     public function add_file(){
         $adress_file = $_POST["x14"];
-        echo "$adress_file";
+        //echo "$adress_file";
        // Название <input type="file">
         $input_name = 'file';
         
@@ -135,7 +135,7 @@ Class Addobl{
     
                 $name = strtr($name, $converter);
                 $parts = pathinfo($name);
-    
+                var_dump($file['tmp_name']);
                 if (empty($name) || empty($parts['extension'])) {
                     $error = 'Недопустимое тип файла';
                 } elseif (!empty($allow) && !in_array(strtolower($parts['extension']), $allow)) {
@@ -159,6 +159,7 @@ Class Addobl{
                         $error = 'Не удалось загрузить файл.';
                     }
                 }
+                var_dump($file['tmp_name']);
             }
             
             // Выводим сообщение о результате загрузки.
@@ -171,5 +172,22 @@ Class Addobl{
                 */
             }
         }
+    }
+
+    public function save_lower($img){
+        //960	320
+
+    }   
+    public function save_mob($img){
+        //350	170
+
+    }
+    public function save_prew($img){
+        //600	200
+
+    }
+    public function save_probl($img){
+        //1920	640
+
     }
 }

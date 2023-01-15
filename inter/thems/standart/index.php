@@ -18,36 +18,57 @@ $el3 = $data[2];
     <p class="p_index container">Основные тематики работ это Аниме, Игры, Фильмы и прочие направления искусств которые характеризуют вашу уникальность и изящность!  Вы можете ознакомиться с нашими работами в разделе «галерея обложек» и скачать понравившуюся вам..</p>
     <p class="p_index container">Наш девиз – Все лучше нашим пользователям.</p>
 
- 
 
-    <div class="section">
-        <h3 class="section_title container">Новые обложки</h3>
-        <p class="section_trek container"><?php echo $el2["name_i"];?></p>
-        <div class="section_cover_box">
-            <div class="section_cover"> 
-                <img class="section_cover_image" src="\src\img\lower\<?php echo $el2["img"];?>" alt="">
+
+    <div class="contant_cover container">
+        <h3 class="contant_cover_title">Новые обложки</h3>
+        <div class="contant_cover_box">
+            <div class="contant_cover_box_line">
+                <div class="contant_cover_box_line_item"><img class="contant_cover_box_line_item_image" src="/src/img/3.png" alt=""></div>
+                <div class="contant_cover_box_line_item margin_line_item"><img class="contant_cover_box_line_item_image" src="/src/img/3.png" alt=""></div>
+                <div class="contant_cover_box_line_item"><img class="contant_cover_box_line_item_image" src="/src/img/3.png" alt=""></div>
             </div>
-            <a class="section_cover_open " href="<?php echo $data[4];?>">
-                <img class="section_cover_open_image" src="/src/img/eye.png" alt="">
-                <p class="section_cover_open_p">открыть</p>
-            </a>
+
+            <div class="contant_cover_box_big"><img class="contant_cover_box_big_image" src="/src/img/1.png" alt="">
+                <a class="contant_cover_box_big_open " href="<?php echo $data[4];?>">
+                    <img class="contant_cover_box_big_open_image" src="/src/img/eye.png" alt="">
+                    <p class="contant_cover_box_big_p">ОТКРЫТЬ НОВЫЕ <br> ОБЛОЖКИ</p>
+                </a>
+            </div>            
+
+            <div class="contant_cover_box_line">
+                <div class="contant_cover_box_line_item"><img class="contant_cover_box_line_item_image" src="/src/img/3.png" alt=""></div>
+                <div class="contant_cover_box_line_item margin_line_item"><img class="contant_cover_box_line_item_image" src="/src/img/3.png" alt=""></div>
+                <div class="contant_cover_box_line_item"><img class="contant_cover_box_line_item_image" src="/src/img/3.png" alt=""></div>
+            </div>
         </div>
     </div>
-<br>
-    <div class="section">
-        <h3 class="section_title container">Популярные обложки</h3>
-        <p class="section_trek container"><?php echo $el1["name_i"];?></p>
-        <div class="section_cover_box">
-            <div class="section_cover"> 
-                <img class="section_cover_image" src="\src\img\lower\<?php echo $el1["img"];?>" alt="">
+
+    <div class="contant_cover_vert container">
+        <h3 class="contant_cover_title">Новые обложки</h3>
+        <div class="contant_cover_vert_box">
+            <div class="contant_cover_vert_box_side">
+                <div class="contant_cover_vert_box_side_item_big"><img class="contant_cover_vert_box_side_item_image" src="/src/img/kvad.png" alt=""></div>
+                <div class="contant_cover_vert_box_side_item_smal"><img class="contant_cover_vert_box_side_item_image" src="/src/img/pram.png" alt=""></div>
             </div>
-            <a class="section_cover_open " href="<?php echo $data[3];?>">
-                <img class="section_cover_open_image" src="/src/img/eye.png" alt="">
-                <p class="section_cover_open_p">открыть</p>
-            </a>
+                <div class="contant_cover_vert_box_center">
+                    <img class="contant_cover_vert_box_center_image" src="/src/img/center.png" alt="">
+                    
+                    <a class="contant_cover_vert_box_center_open " href="<?php echo $data[4];?>">
+                        <img class="contant_cover_vert_box_center_open_image" src="/src/img/eye.png" alt="">
+                        <p class="contant_cover_vert_box_center_p">ОТКРЫТЬ <br> ГАЛЕРЕЮ</p>
+                    </a>
+                </div>
+            <div class="contant_cover_vert_box_side">
+                <div class="contant_cover_vert_box_side_item_smal"><img class="contant_cover_vert_box_side_item_image" src="/src/img/pram.png" alt=""></div>
+                <div class="contant_cover_vert_box_side_item_big"><img class="contant_cover_vert_box_side_item_image" src="/src/img/kvad.png" alt=""></div>
+                
+            </div>
+
+
         </div>
     </div>
-    <br>
+
     <div class="container">
         <div class="form_title">
             <h3>Заказать обложку</h3>
@@ -142,3 +163,25 @@ $el3 = $data[2];
     </div>
         <a class="comment_link" href="#">Все отзывы</a>
 <br> <br> <br>
+
+<div class=" container">
+<div class="social_title"><h3>Мы в Вконтакте</h3></div>
+<div class="social">
+    <div class="social_image_box"><img class="social_image_box_img" src="/src/img/vk1.png" alt=""></div>
+    <div class="social_center">
+        <p class="social_text">
+            Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности 
+            позволяет выполнять важные задания по разработке модели развития. Таким образом постоянное информационно-пропагандистское обеспечение нашей 
+            деятельности в значительной степени обуславливает создание форм развития. Товарищи! рамки и место обучения кадров влечет за собой процесс внедрения и 
+            модернизации модели развития.
+        </p>
+        <a class="social_batton_a" href="">
+            <div class="social_batton"> 
+            перейти
+            </div>
+        </a>
+    </div>
+    <div class="social_image_box"><img class="social_image_box_img display_none" src="/src/img/vk2.png" alt=""></div>
+</div>
+
+</div>

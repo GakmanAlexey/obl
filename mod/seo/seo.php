@@ -27,4 +27,11 @@ Class seo{
         return $data;
     }
 
+    public function add($url, $title, $discription){
+        $sql = new \Mod\Sql\Sql;
+        $connect = $sql->db_connect;  
+        $sth = $connect->prepare("INSERT INTO `seo` SET  `url` = ?, `title` = ?, `discrip` = ?, `date_unix` = ?");
+        $sth->execute(array($url,$title,$discription,0));
+    }
+
 }

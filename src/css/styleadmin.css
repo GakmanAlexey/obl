@@ -62,9 +62,9 @@ font-weight: 200;
 }
 
 .element_menu_text{
-    width: 200px;
+    width: 250px;
     margin: 2px 12px;
-    font-size: 16px;
+    font-size: 12px;
     text-transform: uppercase ;
     letter-spacing:2px;
 
